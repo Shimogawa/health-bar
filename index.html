@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health bar</title>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div>
+    Mode:
+    <select id="mode">
+      <option value="pokemon">Pokemon</option>
+      <option value="cubic">Cubic Bezier</option>
+    </select>
+  </div>
+  <div>
+    Set max health:
+    <input type="number" id="maxHealth" min="1" value="50" />
+    <button id="btnMax">Set max health</button>
+  </div>
+  <div>
+    Set current health:
+    <input type="number" id="health" min="0" value="50" />
+    <button id="btn">Set health</button>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
